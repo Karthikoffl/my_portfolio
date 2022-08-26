@@ -10,7 +10,6 @@ brotlipy==0.7.0
 bs4==0.0.1
 certifi==2021.10.8
 chardet==3.0.4
-clyent==1.2.2
 cmake==3.18.2.post1
 comtypes==1.1.10
 conda==4.13.0
