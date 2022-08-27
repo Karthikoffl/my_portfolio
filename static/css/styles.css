@@ -763,7 +763,7 @@ h3.my-profession{
 
 footer{
     background: var(--bg-black-900);
-    padding: 20px;
+    padding: 10px;
     color: #000; 
 }
 
@@ -800,7 +800,7 @@ footer{
 }
 
 .socials a i{
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     transition: color .4s ease;
 }
 
@@ -821,6 +821,11 @@ footer{
 .footer-bottom a{
     cursor: pointer;
     text-decoration: none;
+    color: #000
+}
+
+.footer-bottom a:hover{
+    color: var(--skin-color);
 }
 
 @media (max-width:1199px){
