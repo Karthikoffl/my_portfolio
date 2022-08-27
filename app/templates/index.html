@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
         <link rel="shortcut icon" type="image/x-icon" href="{% static 'Images/sprint logo png.png' %}"/>
         <script src="https://use.fontawesome.com/76df6b72ec.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         
     </head>
 <body>
@@ -294,12 +295,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
+                            <h2>Blog</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects :</h2>
+                            <h2></h2>
                         </div>
                     </div>
                     <div class="row">
@@ -388,32 +389,32 @@
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
                                 </div>
                             </div>
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                                    <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                   <textarea name="message" class="form-control" id="" placeholder="Message" required></textarea>
+                                   <textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Send Message</button>
+                                <button id="submit" type="submit" class="btn">Send Message</button>
                             </div>
                         </div>
                     </form>    
@@ -459,5 +460,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="{% static 'js/script.js' %}"></script>
     <script src="{% static 'js/style-switcher.js' %}"></script>
+    <script>
+        $("#submit").click(function() {
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var subject = $("#subject").val();
+            var message = $("#message").val();
+            
+            if(name == '' || email == '' || subject == '' || message == '' ||){
+               
+                Swal.fire({                          
+                          icon: 'success',
+                          title: 'Thankyou',
+                          text: 'Your Message Has Been Send',
+                          confirmButton: 'btn btn-success',
+                         });
+               }
+        }
+    </script>
 </body>
 </html>
