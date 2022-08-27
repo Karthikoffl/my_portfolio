@@ -469,12 +469,11 @@
             
             if(name == '' || email == '' || subject == '' || message == '' ||){
                
-                Swal.fire({                          
-                          icon: 'success',
-                          title: 'Thankyou',
-                          text: 'Your Message Has Been Send',
-                          confirmButton: 'btn btn-success',
-                         });
+                Swal.fire(
+                          'Good job!',
+                          'You clicked the button!',
+                          'success'
+                        )
                }
         }
     </script>
