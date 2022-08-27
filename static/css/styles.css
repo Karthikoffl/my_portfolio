@@ -40,7 +40,7 @@ ul{
 
 .section{
     background: var(--bg-black-900);
-    min-height: 100vh;
+    min-height: calc(100vh - 211px - 58px);
     display: block;
     padding: 0 30px;
     opacity: 1;
@@ -759,6 +759,70 @@ h3.my-profession{
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px;
+}
+
+footer{
+    background: #111;
+    width: 100vw;
+    padding: 20px;
+    color: #fff; 
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;  
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #00FFFF;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom a{
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media (max-width:1199px){
