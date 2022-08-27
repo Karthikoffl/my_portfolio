@@ -809,8 +809,8 @@ footer{
 }
 
 .footer-bottom{
-    background: var(--bg-black-100);
-    padding: 20px 0;
+    background: var(--bg-black-900);
+    padding: 10px 0;
     text-align: center;
 }
 .footer-bottom p{
