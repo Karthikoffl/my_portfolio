@@ -762,9 +762,9 @@ h3.my-profession{
 }
 
 footer{
-    background: #111;
+    background: var(--bg-black-900);
     padding: 20px;
-    color: #fff; 
+    color: #000; 
 }
 
 .footer-content{
@@ -796,7 +796,7 @@ footer{
 
 .socials a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .socials a i{
@@ -805,11 +805,11 @@ footer{
 }
 
 .socials a:hover i{
-    color: #00FFFF;
+    color: var(--skin-color);
 }
 
 .footer-bottom{
-    background: #000;
+    background: var(--bg-black-100);
     padding: 20px 0;
     text-align: center;
 }
